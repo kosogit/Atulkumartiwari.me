@@ -1,11 +1,19 @@
 body{
     background-color: #EAF6F6;
+   
 }
 h1{
     color: #F5EEDD;
-
+    font-family: 'Lucida Handwriting', cursive;
     text-shadow:0 0 5px #077A7D , 0 0 5px #077A7D,2px 2px 5px #06202B;
 }
+h1:hover{
+    color: #feb200;
+    font-family: 'Courier New', Courier, monospace;
+
+    text-shadow:0 0 5px #ffffff , 0 0 5px #63e7f3,2px 2px 5px #000000;
+}
+
     
 
 h3{
@@ -23,16 +31,23 @@ tr td{
 
 }
 
-
 form{
      color:black;
 }
+input[type=submit]{
+    background-color: #F76B8A;
 
+}
+input[type=submit]:hover{
+    background-color: #feb8c7;
+}
+img{
+    
+    border-radius: 100%;
+}
 
 hr {
-   
     border: none;
-     border-top: 1px dotted gray;
+    border-top: 1px dotted gray;
     width: 70%;
-   
 }
