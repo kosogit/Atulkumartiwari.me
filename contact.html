@@ -14,6 +14,28 @@
       font-weight: bold;
       font-family: 'Courier New', Courier, monospace;;
     }
+    .header {
+      background-image: url('./image/day.png'); /* replace with your image path */
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+      position: relative;
+      border: 3px solid silver;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(192,192,192,0.6);
+      overflow: hidden;
+    }
+
+    /* make every h1 and p darker */
+    h1, p {
+      color: #0b0b0b;
+      font-weight: 700;
+    }
     body {
       padding: 20px;
     }
@@ -26,10 +48,23 @@
     button {
       margin-top: 10px;
     }
+    table td:hover {
+      background-color: #f2f2f2;
+      transition: background-color 0.2s ease;
+    }
   </style>
 </head>
 <body>
-    <div class="container">
+    <header class="header">
+      
+          <!-- header  -->
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <h1 style="font: weight 1000px;;">Contact Atul</h1>
+          <p><strong>Get in touch with me via email or form below</strong></p>
+        </div>
+        
+    </header>
+    <div class="container" style="padding: 20px;">
       <div class="row ">
         <div class="col-lg-5 col-md-6 mb-4">
           <h3><strong>Contact Information</strong></h3>
@@ -56,8 +91,8 @@
             </tbody>
           </table>
         </div>
-
         <div class="col-lg-7 col-md-6 mb-4">
+          <div class="card" style="padding: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);border-color:gray ;">
           <form action="mailto:Atulkumartiwari69@gmail.com" method="post" enctype="text/plain">
             <div class="mb-2">
               <label for="name" class="form-label myinput" style="font-size:0.9rem;">Your Name :</label>
@@ -78,6 +113,7 @@
               SEND
             </button>
           </form>
+          </div>
         </div>
       </div>
     </div>
